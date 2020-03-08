@@ -1,11 +1,9 @@
-#pragma GCC optimize "trapv"
 #include<bits/stdc++.h>
 #define ll long long 
 #define fab(a,b,i) for(int i=a;i<b;i++)
 #define pb push_back
 #define db double
 #define mp make_pair
-
 #define endl "\n"
 #define f first
 #define se second
