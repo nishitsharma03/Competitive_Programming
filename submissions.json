@@ -1058,6 +1058,23 @@
     ],
     "timestamp": "Dec/24/2020 02:54"
   },
+  "CF74339457": {
+    "contest_id": 1315,
+    "language": "GNU C++14",
+    "path": "codeforces\\1315\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Recommendations",
+    "problem_url": "https://codeforces.com/contest/1315/problem/D",
+    "submission_id": "CF74339457",
+    "submission_url": "https://codeforces.com/contest/1315/submission/74339457",
+    "tags": [
+      "data structures",
+      "greedy",
+      "sortings",
+      "*1700"
+    ],
+    "timestamp": "Mar/26/2020 03:47"
+  },
   "CF74340524": {
     "contest_id": 1321,
     "language": "GNU C++14",
