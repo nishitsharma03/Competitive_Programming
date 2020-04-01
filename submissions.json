@@ -1058,6 +1058,21 @@
     ],
     "timestamp": "Dec/24/2020 02:54"
   },
+  "CF75119386": {
+    "contest_id": 1331,
+    "language": "GNU C++14",
+    "path": "codeforces\\1331\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Limericks",
+    "problem_url": "https://codeforces.com/contest/1331/problem/B",
+    "submission_id": "CF75119386",
+    "submission_url": "https://codeforces.com/contest/1331/submission/75119386",
+    "tags": [
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Apr/01/2020 20:31"
+  },
   "CF75137731": {
     "contest_id": 1331,
     "language": "GNU C++14",
