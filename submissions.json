@@ -1058,6 +1058,18 @@
     ],
     "timestamp": "Dec/24/2020 02:54"
   },
+  "CF75094181": {
+    "contest_id": 1331,
+    "language": "GNU C++14",
+    "path": "codeforces\\1331\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Is it rated?",
+    "problem_url": "https://codeforces.com/contest/1331/problem/A",
+    "submission_id": "CF75094181",
+    "submission_url": "https://codeforces.com/contest/1331/submission/75094181",
+    "tags": [],
+    "timestamp": "Apr/01/2020 20:09"
+  },
   "CF75114575": {
     "contest_id": 1331,
     "language": "GNU C++14",
