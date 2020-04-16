@@ -1058,6 +1058,23 @@
     ],
     "timestamp": "Dec/24/2020 02:54"
   },
+  "CF76995426": {
+    "contest_id": 1337,
+    "language": "GNU C++14",
+    "path": "codeforces\\1337\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Kana and Dragon Quest game",
+    "problem_url": "https://codeforces.com/contest/1337/problem/B",
+    "submission_id": "CF76995426",
+    "submission_url": "https://codeforces.com/contest/1337/submission/76995426",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*900"
+    ],
+    "timestamp": "Apr/16/2020 21:56"
+  },
   "CF77091252": {
     "contest_id": 1337,
     "language": "GNU C++14",
