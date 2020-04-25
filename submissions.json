@@ -1058,6 +1058,24 @@
     ],
     "timestamp": "Dec/24/2020 02:54"
   },
+  "CF77977840": {
+    "contest_id": 1340,
+    "language": "GNU C++14",
+    "path": "codeforces\\1340\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Nastya and Scoreboard",
+    "problem_url": "https://codeforces.com/contest/1340/problem/B",
+    "submission_id": "CF77977840",
+    "submission_url": "https://codeforces.com/contest/1340/submission/77977840",
+    "tags": [
+      "bitmasks",
+      "dp",
+      "graphs",
+      "greedy",
+      "*1700"
+    ],
+    "timestamp": "Apr/25/2020 10:53"
+  },
   "CF77978140": {
     "contest_id": 1341,
     "language": "GNU C++14",
