@@ -14,38 +14,42 @@
 using namespace std;
 int h,w;
 ll dp[1005][1005];
+void builddp(string s[])
+{
+	for(int i=0;i<h;i++)
+	{
+		if(s[i][0]=='.')
+			dp[i][0]=1;
+		else
+			break;
+	}
+	for(int i=0;i<w;i++)
+	{
+		if(s[0][i]=='.')
+			dp[0][i]=1;
+		else
+			break;
+	}
+	for(int i=1;i<h;i++)
+	{
+		fab(1,w,j)
+		{
+			if(s[i][j]=='#')
+				continue;
+			dp[i][j]=(dp[i-1][j]+dp[i][j-1])%MOD;
+		}
+	}
+	cout<<dp[h-1][w-1]<<endl;
+}
 int main()
 { quick;
 
     cin>>h>>w;
-    vector<string> v(h);
+    string s[h];
     fab(0,h,i)
-    cin>>v[i];
-    fab(0,w,i)
-    {
-        if(v[0][i]=='#')
-            break;
-        dp[0][i]=1;
-    }
-    fab(0,h,i)
-    {
-        if(v[i][0]=='#')
-            break;
-        dp[i][0]=1;
-    }
-    fab(1,h,i)
-    {
-        fab(1,w,j)
-        {
-            if(v[i][j]=='#')
-                continue;
-            dp[i][j]=dp[i-1][j]+dp[i][j-1];
-            dp[i][j]%=MOD;
+    cin>>s[i];
+    builddp(s);
+	
 
-        }
-    }
-    cout<<dp[h-1][w-1]<<endl;
-
- cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
-    return 0;
+	return 0;
 }
