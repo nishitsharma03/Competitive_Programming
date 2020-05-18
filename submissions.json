@@ -1,4 +1,20 @@
 {
+  "AC13385864": {
+    "contest_id": "dp",
+    "language": "C++14 (GCC 5.4.1)",
+    "path": "atcoder\\dp\\F.cpp",
+    "platform": "AtCoder",
+    "problem_index": "F",
+    "problem_name": "LCS",
+    "problem_url": "https://atcoder.jp/contests/dp/tasks/dp_f",
+    "submission_id": "AC13385864",
+    "submission_url": "https://atcoder.jp/contests/dp/submissions/13385864",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "May/18/2020 21:26"
+  },
   "AC13389344": {
     "contest_id": "dp",
     "language": "C++14 (GCC 5.4.1)",

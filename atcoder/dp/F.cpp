@@ -12,58 +12,60 @@
 #define MOD 1000000007
 #define quick ios_base::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
-string s,t;
-ll dp[3005][3005];
-ll recurse(int i,int j)
+string s,t; 
+ll dp[4000][4002];
+ll recurse(ll sptr,ll tptr)
 {
-    if(i<=0 or j<=0)
-        return 0;
-    if(dp[i][j]!=-1)
-        return dp[i][j];
-    if(s[i-1]==t[j-1])
-    {
-        dp[i][j]=recurse(i-1,j-1)+1;
-    }
-    else
-    {
-        dp[i][j]=max(recurse(i-1,j),recurse(i,j-1));
-    }
-    return dp[i][j];
+	if(sptr<0)
+		return 0;
+	if(tptr<0)
+		return 0;
+	if(dp[sptr][tptr]!=-1)
+		return dp[sptr][tptr];
+	if(s[sptr]==t[tptr])
+		return dp[sptr][tptr]=recurse(sptr-1,tptr-1)+1;
+	else 
+		
+
+		return dp[sptr][tptr]=max(recurse(sptr-1,tptr),recurse(sptr,tptr-1));
+	
 }
 int main()
 { quick;
 
     cin>>s>>t;
-   
-    memset(dp,-1,sizeof(dp));
-    int i=s.size();
-    int j=t.size();
-   recurse(i,j);
-   
-    string ans="";
-   while(i>0 and j>0)
+    fab(0,s.size(),i)
+    fab(0,t.size(),j)
     {
-        
-        if(s[i-1]==t[j-1])
-        {
-            ans=ans+s[i-1];
-            i--;
-            j--;
-
-        }
-        else
-        { if(dp[i-1][j]>=dp[i][j-1])
-            {
-                i--;
-            }
-            else
-                j--;
-
-        }
+    	//cout<<dp[i][j];
+    	dp[i][j]=-1;
+    
     }
-    reverse(all(ans));
-    cout<<ans<<endl;
 
- cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
-    return 0;
+    ll sptr=s.size()-1,tptr=t.size()-1;
+    ll siz=recurse(sptr,tptr);
+    sptr=s.size()-1;tptr=t.size()-1;
+    string ans="";
+    while(sptr>=0 and tptr>=0)
+
+    {
+    	if(s[sptr]==t[tptr])
+    		{ans=s[sptr]+ans;
+    			sptr--;
+    			tptr--;}
+    	else if(sptr>0 and tptr>0 and dp[sptr-1][tptr]>dp[sptr][tptr-1])
+    		sptr--;
+    	else if(tptr==0)
+    		sptr--;
+    	else 
+    		tptr--;
+
+
+    }
+    //assert(ans.size()==siz);
+    cout<<ans<<endl;
+    
+
+
+	return 0;
 }
