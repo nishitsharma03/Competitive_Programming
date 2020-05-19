@@ -12,48 +12,64 @@
 #define MOD 1000000007
 #define quick ios_base::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
-ll dp[100005];
+ll n,k,a[105];
+int dp[100005];
+
+
+
 int main()
 { quick;
 
-    ll n,k;
-    cin>>n>>k;
-    ll a[n];
-    fab(0,n,i)
-    cin>>a[i];
-    ll small=*min_element(a,a+n);
-    
-    fab(0,n,i) 
-    {
-        
-        fab(a[i],small+a[i] and j<k+1,j)
-        {
-            dp[j]=1;
-        }
+	cin>>n>>k;
+	fab(0,n,i)
+	cin>>a[i];
+	memset(dp,-1,sizeof(dp));
+	sort(a,a+n);
+	ll sm=a[0];
+	fab(0,sm+1,i)
+	dp[i]=1;
+	
+		fab(0,n,i)
+		{
+			
+			dp[a[i]]=1;
+			fab(0,sm and a[i]+j<=k,j)
+			{
+				dp[a[i]+j]=1;
+			}
+		}
+			/*	fab(0,k+1,i)
+		cout<<dp[i]<<" ";
+		cout<<endl;*/
+
+		fab(0,k+1,i)
+		{
+			if(dp[i]!=-1)
+				continue;
+			bool flag=false;
+			fab(0,n and a[j]<=i,j)
+			{
+				if(dp[i-a[j]]==0)
+				{
+					dp[i]=1;
+					flag=true;
+				}
+			}
+			if(dp[i]==-1 and !flag)
+				dp[i]=0;
+		}
+		/*fab(0,k+1,i)
+		cout<<dp[i]<<" ";
+		cout<<endl;*/
+		if(dp[k]==1)
+		{
+			cout<<"First";
+		}
+		else
+			cout<<"Second";
+
+	
 
 
-    }
-    fab(0,k+1,i)
-    {
-         
-        fab(0,n,j)
-        {
-            if(i-a[j]>=0 and dp[i-a[j]]==0)
-            {
-                dp[i]=1;
-
-            }
-        }
-
-
-    }
-   
-    if(dp[k])
-        cout<<"First\n";
-    else
-        cout<<"Second\n";
-
-
- cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
-    return 0;
+	return 0;
 }
