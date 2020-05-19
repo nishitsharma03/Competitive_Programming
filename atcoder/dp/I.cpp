@@ -12,37 +12,40 @@
 #define MOD 1000000007
 #define quick ios_base::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
+db n,a[3005];
 db dp[3005][3005];
+void builddp()
+{
+	cout<<setprecision(12);
+	dp[0][0]=1-a[0];
+	dp[0][1]=a[0];
+	for(int i=1;i<n;i++)
+	{
+		dp[i][0]=dp[i-1][0]*(1-a[i]);
+		fab(1,i+2,j)
+		{
+			dp[i][j]=dp[i-1][j]*(1-a[i])+dp[i-1][j-1]*a[i];
+		
+		//cout<<dp[i][j]<<" ";
+		}
+		//cout<<endl;
+	}
+
+	db ans=0;
+
+	fab(n/2+1,n+1,i)
+	ans+=(dp[int(n-1)][i]);
+	cout<<setprecision(12)<<ans<<endl;
+}
+
+
 int main()
 { quick;
 
-    int n;
-    cin>>n;
-    db a[n];
-    fab(0,n,i)
-    cin>>a[i];
-    dp[0][0]=1-a[0];
-    fab(1,n,i)
-    {
-        dp[i][0]=dp[i-1][0]*(1-a[i]);
-    }
-    dp[0][1]=a[0];
-    fab(1,n,i)
-    {
-        fab(1,n+1,j)
-        {
-        dp[i][j]=dp[i-1][j]*(db(1)-a[i])+dp[i-1][j-1]*(a[i]);
-        }
-    }
-    
-    db ans=0;
-    fab((n+1)/2,n+1,i)
-    ans+=dp[n-1][i];
-
-    cout<<setprecision(10)<<ans<<endl;
-
-
-
- cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
-    return 0;
+	cin>>n;
+	fab(0,n,i)
+	cin>>a[i];
+	//memset(dp,-1,sizeof(dp));
+	builddp();
+	return 0;
 }
