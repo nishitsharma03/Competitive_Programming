@@ -12,35 +12,46 @@
 #define MOD 1000000007
 #define quick ios_base::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
-int n;
-ll a[3005];
-ll dp[3005][3005][2];
-int turn;
-ll recurse(int i,int j, int k)
+ll dp[3005][3005][2],n,a[3005];
+ll recurse(int l,int r,int i)
 {
-    if(i>j)
-        return 0;
-    if(dp[i][j][k]!=-1)
-        return dp[i][j][k];
-    if(k==0) 
-        dp[i][j][k]=max(recurse(i+1,j,1-k)+a[i],recurse(i,j-1,1-k)+a[j]);
-        
-    
-    else
-        dp[i][j][k]=min(recurse(i+1,j,1-k)-a[i],recurse(i,j-1,1-k)-a[j]);
-    return dp[i][j][k];
+	if(l>r)
+		return 0;
+	if(dp[l][r][i]!=-1)
+		return dp[l][r][i];
+	if(l==r )
+		if(i==0)
+		return dp[l][r][i]=a[l]+recurse(l+1,r,1);
+
+		else
+			return dp[l][r][i]=recurse(l+1,r,0)-a[l];
+	if(i==0)
+	dp[l][r][i]=max(recurse(l+1,r,1)+a[l],recurse(l,r-1,1)+a[r]);
+	else
+		dp[l][r][i]=(min(recurse(l+1,r,0)-a[l],recurse(l,r-1,0)-a[r]));
+	return dp[l][r][i];
 
 
 }
+
 int main()
 { quick;
 
-    cin>>n;
-    fab(0,n,i)
-    cin>>a[i];
-    memset(dp,-1,sizeof(dp));
-    cout<<recurse(0,n-1,0);
+	cin>>n;
+	memset(dp,-1,sizeof(dp));
+	fab(0,n,i)
+	cin>>a[i];
+	cout<<recurse(0,n-1,0)<<endl;
+	/*fab(0,n,i)
+	{
+		fab(0,n,j)
+		{
+			fab(0,2,k)
+			cout<<dp[i][j][k]<<" ";
+			cout<<endl;
+		}
+		cout<<endl;
+	}*/
 
- cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
-    return 0;
+	return 0;
 }
