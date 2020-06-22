@@ -3005,6 +3005,23 @@
     ],
     "timestamp": "May/09/2020 21:12"
   },
+  "CF84698397": {
+    "contest_id": 954,
+    "language": "GNU C++14",
+    "path": "codeforces\\954\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Fight Against Traffic",
+    "problem_url": "https://codeforces.com/contest/954/problem/D",
+    "submission_id": "CF84698397",
+    "submission_url": "https://codeforces.com/contest/954/submission/84698397",
+    "tags": [
+      "dfs and similar",
+      "graphs",
+      "shortest paths",
+      "*1600"
+    ],
+    "timestamp": "Jun/23/2020 02:33"
+  },
   "CF84700078": {
     "contest_id": 979,
     "language": "GNU C++14",
