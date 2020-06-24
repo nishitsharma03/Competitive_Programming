@@ -3005,6 +3005,23 @@
     ],
     "timestamp": "May/09/2020 21:12"
   },
+  "CF84922838": {
+    "contest_id": 1290,
+    "language": "GNU C++14",
+    "path": "codeforces\\1290\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Mind Control",
+    "problem_url": "https://codeforces.com/contest/1290/problem/A",
+    "submission_id": "CF84922838",
+    "submission_url": "https://codeforces.com/contest/1290/submission/84922838",
+    "tags": [
+      "brute force",
+      "data structures",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Jun/25/2020 01:26"
+  },
   "CF85073214": {
     "contest_id": 1373,
     "language": "GNU C++14",
