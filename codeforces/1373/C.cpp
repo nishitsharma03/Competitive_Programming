@@ -1,0 +1,59 @@
+//#pragma GCC optimize "trapv"
+#include<bits/stdc++.h>
+#define ll long long int
+#define fab(a,b,i) for(int i=a;i<b;i++)
+#define pb push_back
+#define db double
+#define mp make_pair
+#define endl "\n"
+#define f first
+#define se second
+#define all(x) x.begin(),x.end()
+#define MOD 1000000007
+#define quick ios_base::sync_with_stdio(false);cin.tie(NULL)
+using namespace std;
+
+int main()
+{ quick;
+#ifndef ONLINE_JUDGE
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
+#endif
+	int t;
+	cin>>t;
+	while(t--)
+	{
+		string s;
+		cin>>s;
+		int n=s.length();
+		map<int,int> m;
+		int tot=0;
+		fab(0,n,i)
+		{
+			if(s[i]=='+')
+				tot++;
+			else
+				tot--;
+			if(!m[tot])
+			{
+				m[tot]=i+1;
+			}
+
+		}	
+		ll ans=0;
+	fab(1,n+2,i)
+	{
+		if(!m[-(i)])
+		{
+			ans+=n;
+			break;
+		}
+		ans+=m[(-i)];
+	}
+	cout<<ans<<endl;
+	}
+	
+
+ cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
+	return 0;
+}
