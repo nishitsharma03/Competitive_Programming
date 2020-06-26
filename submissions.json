@@ -1,4 +1,20 @@
 {
+  "AC14701678": {
+    "contest_id": "dp",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\dp\\G.cpp",
+    "platform": "AtCoder",
+    "problem_index": "G",
+    "problem_name": "Longest Path",
+    "problem_url": "https://atcoder.jp/contests/dp/tasks/dp_g",
+    "submission_id": "AC14701678",
+    "submission_url": "https://atcoder.jp/contests/dp/submissions/14701678",
+    "tags": [
+      "AtCoder",
+      "*100"
+    ],
+    "timestamp": "Jun/26/2020 21:50"
+  },
   "AC14701758": {
     "contest_id": "dp",
     "language": "C++ (GCC 9.2.1)",
