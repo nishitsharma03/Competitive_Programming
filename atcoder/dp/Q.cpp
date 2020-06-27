@@ -1,7 +1,4 @@
 //#pragma GCC optimize "trapv"
-#pragma GCC optimize("Ofast")
-#pragma GCC optimize("O3", "unroll-loops")
-#pragma GCC target("avx,avx2,fma")
 #include<bits/stdc++.h>
 #define ll long long int
 #define fab(a,b,i) for(int i=a;i<b;i++)
@@ -13,99 +10,70 @@
 #define se second
 #define all(x) x.begin(),x.end()
 #define MOD 1000000007
-#define vll vector<ll>
-#define vi vector<int>
-#define pii pair<int,int>
-#define pll pair<ll,ll>
-#define quick ios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL)
-ll add(ll x, ll y) {ll res = x + y; return (res >= MOD ? res - MOD : res);}
-ll mul(ll x, ll y) {ll res = x * y; return (res >= MOD ? res % MOD : res);}
-ll sub(ll x, ll y) {ll res = x - y; return (res < 0 ? res + MOD : res);}
-ll power(ll x, ll y) {ll res = 1; x %= MOD; while (y) {if (y & 1)res = mul(res, x); y >>= 1; x = mul(x, x);} return res;}
-ll mod_inv(ll x) {return power(x, MOD - 2);}
-
+#define quick ios_base::sync_with_stdio(false);cin.tie(NULL)
 using namespace std;
-const int N = 2e5 + 4;
-ll seg[2 * N];
-int n;
-void update( int i, ll val)
+int n;ll a[200005];
+
+ll seg[4*200005];
+void update(int node,int l,int r,ll ind,ll val)
 {
-    i += n;
-    seg[i] = val;
-    for ( ; i > 1; i /= 2)
+    if(l==r)
     {
-        seg[i / 2] = max(seg[i] , seg[i ^ 1]);
-        //  cout << "seg:" << i / 2 << " " << seg[i / 2] << endl;
+        seg[node]=val;
+        return;
+        //cout<<"l:"<<l<<" "<<val<<" "<<seg[node]<<" "<<node<<endl;
+        //a[ind]=val
     }
+    else
+    {
+            int mid=(l+r)/2;
+            if(ind<=mid)
+                update(2*node,l,mid,ind,val);
+            else
+                update(2*node+1,mid+1,r,ind,val);
+
+    }
+    seg[node]=max(seg[2*node],seg[2*node+1]);
+
 }
 
-ll query( int l, int r)
+ll query(int node,int s,int e,int l,int r)
 {
-    //cout << "l:" << l << " " << r << endl;
-    l += n;
-    r += n;
-    ll ans = 0;
-    while (r > l)
-    {
-        if (l % 2) {
-
-            //cout << "l " << l << " " << seg[l] << endl;
-            ans = max(ans, seg[l]);
-            l++;
-        }
-        if (r % 2)
-        {
-
-
-            r--;
-            //cout << "r " << r << " " << seg[r] << endl;
-            ans = max(ans, seg[r]);
-        }
-
-        l /= 2;
-        r /= 2;
-    }
-    return ans;
+    if(s>r or e<l)
+        return 0;
+    //cout<<"AFdgS";
+    if(l<=s and e<=r)
+        return seg[node];
+    int mid=(s+e)/2;
+    return max(query(2*node,s,mid,l,r),query(2*node+1,mid+1,e,l,r));
 }
 
 int main()
-{   quick;
+{ quick;
 #ifndef ONLINE_JUDGE
-    freopen("D:/sublime/input.txt", "r", stdin);
-    freopen("D:/sublime/output.txt", "w", stdout);
+    freopen("input.txt", "r", stdin);
+    freopen("output.txt", "w", stdout);
 #endif
-    // int t;
-    // cin >> t;
-    // while (t--)
+    cin>>n;
+    fab(0,n,i)
+    cin>>a[i];
+    ll b[n];
+    fab(0,n,i)
+    cin>>b[i];
+    ll dp[n+1]={0};
+    fab(0,n,i)
     {
+        ll sm=query(1,0,n+1,0,a[i]);
+       // cout<<"sm:"<<i<<" "<<sm<<endl;
+        dp[a[i]]=max(dp[a[i]],sm+b[i]);
+        //cout<<dp[i]<<" ";
+        update(1,0,n+1,a[i],dp[a[i]]);
 
-        cin >> n;
-        vector<ll> h(n), b(n);
-        fab(0, n, i)
-        {
-            cin >> h[i];
-        }
-        fab(0, n, i)
-        {
-            cin >> b[i];
-        }
-        fab(0, 2 * n + 2, i)
-        {
-            seg[i] = 0;
-        }
-        ll ans = 0;
-        for ( int i = 0; i < n; i++)
-        {
-            ll prev = query(1, h[i]);
-           // cout << "i:" << i << " " << prev << " " << h[i] << " " << b[i] << endl;
-            ans = max(ans, (prev + b[i]));
-            update(h[i], (prev + b[i]));
-        }
-        cout << ans << endl;
+    }    
+ //   fab(0,4*n,i)
+   // cout<<seg[i]<<" ";
+    cout<<query(1,0,n+1,0,n+1)<<endl;
 
-    }
-
-
-    cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
+ cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
     return 0;
 }
