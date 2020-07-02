@@ -3005,6 +3005,24 @@
     ],
     "timestamp": "May/09/2020 21:12"
   },
+  "CF85810962": {
+    "contest_id": 29,
+    "language": "GNU C++14",
+    "path": "codeforces\\29\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Mail Stamps",
+    "problem_url": "https://codeforces.com/contest/29/problem/C",
+    "submission_id": "CF85810962",
+    "submission_url": "https://codeforces.com/contest/29/submission/85810962",
+    "tags": [
+      "data structures",
+      "dfs and similar",
+      "graphs",
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Jul/03/2020 04:10"
+  },
   "CF85951954": {
     "contest_id": 1375,
     "language": "GNU C++14",
