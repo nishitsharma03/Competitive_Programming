@@ -23,7 +23,7 @@ ll mod_inv(ll x) {return power(x, MOD - 2);}
 
 using namespace std;
 
-int selectinrow(vector<string> &v, int n, int m, int k)
+int arrangeinrow(vector<string> &v, int n, int m, int k)
 {
 	int ans=0;
 	fab(0,n,i)
@@ -42,7 +42,7 @@ int selectinrow(vector<string> &v, int n, int m, int k)
 	}
 	return ans;
 }
-int selectincol(vector<string> &v, int n, int m, int k)
+int arrangeincol(vector<string> &v, int n, int m, int k)
 {
 	int ans=0;
 	fab(0,m,i)
@@ -75,10 +75,14 @@ int main()
 	cin>>v[i];
 	if(k==1)
 	{
-		cout<<selectincol(v,n,m,k)<<endl;
+		int cnt=0;
+		fab(0,n,i)
+		fab(0,m,j)
+		cnt+=v[i][j]=='.';
+		cout<<cnt<<endl;
 		return 0;
 	}
-	cout<<selectincol(v,n,m,k)+selectinrow(v,n,m,k)<<endl;
+	cout<<arrangeincol(v,n,m,k)+arrangeinrow(v,n,m,k)<<endl;
 
 
  cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << endl;
