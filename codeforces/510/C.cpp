@@ -79,7 +79,7 @@ int main()
 				done=1;
 
 				//cout<<a[i-1][j]<<" "<<a[i][j]<<endl;
-				//if(find(all(v[smaller]),bigger)==v[smaller].end())
+				if(find(all(v[smaller]),bigger)==v[smaller].end())
 				v[smaller].pb(bigger);
 				break;
 			}
