@@ -38,35 +38,34 @@ int main()
 		string s;
 		cin>>s;
 		int n=s.length();
-		int ans=1e9+3;
-		
+		int freq[10]={0};
+		fab(0,n,i)
+		{
+			freq[s[i]-'0']++;
+		}
+		sort(freq,freq+10,greater<int>());
+		int ans=n-freq[0];
 		fab(0,10,i)
 		{
 			fab(0,10,j)
 			{
 				char tm1=char('0'+i),tm2=char('0'+j);
-				
+				//cout<<"tm:"<<tm1<<" "<<tm2<<endl;
 				int cnt=0;
 				fab(0,n,k)
 				{
 					char chk=tm1;
-					
-
 					if(cnt%2)
 						chk=tm2;
-					
-
 					if(s[k]==chk)
 						cnt++;
 
 
 
 				}
-				
+				//cout<<"i:"<<i<<" "<<j<<" "<<cnt<<endl;
 				if(i!=j and cnt%2)
 					cnt--;
-				
-
 				ans=min(ans,n-cnt);
 			}
 		}
