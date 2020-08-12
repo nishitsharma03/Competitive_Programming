@@ -3005,6 +3005,22 @@
     ],
     "timestamp": "May/09/2020 21:12"
   },
+  "CF89682258": {
+    "contest_id": 1395,
+    "language": "GNU C++14",
+    "path": "codeforces\\1395\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Boboniu Likes to Color Balls",
+    "problem_url": "https://codeforces.com/contest/1395/problem/A",
+    "submission_id": "CF89682258",
+    "submission_url": "https://codeforces.com/contest/1395/submission/89682258",
+    "tags": [
+      "brute force",
+      "math",
+      "*1000"
+    ],
+    "timestamp": "Aug/12/2020 20:35"
+  },
   "CF89699114": {
     "contest_id": 1395,
     "language": "GNU C++14",
