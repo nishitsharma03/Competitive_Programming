@@ -31,10 +31,17 @@ int r,g,b;
 vector<ll> x(N),y(N),z(N);
 ll recurse(int i, int j, int k)
 {
-
-	if(dp[i][j][k]!=-1)
+	int cnt=0;
+	if(i>=r)
+		cnt++;
+	if(j>=g)
+		cnt++;
+	if(k>=b)
+		cnt++;
+	if(cnt>=2)
+		return 0;
+	else if(dp[i][j][k]!=-1)
 		return dp[i][j][k];
-	dp[i][j][k]=0;
 	if(i<r and j<g)
 		dp[i][j][k]=max(dp[i][j][k],x[i]*y[j]+recurse(i+1,j+1,k));
 	if(i<r and k<b)
