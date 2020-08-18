@@ -3005,6 +3005,25 @@
     ],
     "timestamp": "May/09/2020 21:12"
   },
+  "CF90335872": {
+    "contest_id": 913,
+    "language": "GNU C++14",
+    "path": "codeforces\\913\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Too Easy Problems",
+    "problem_url": "https://codeforces.com/contest/913/problem/D",
+    "submission_id": "CF90335872",
+    "submission_url": "https://codeforces.com/contest/913/submission/90335872",
+    "tags": [
+      "binary search",
+      "brute force",
+      "data structures",
+      "greedy",
+      "sortings",
+      "*1800"
+    ],
+    "timestamp": "Aug/18/2020 23:41"
+  },
   "CF90346385": {
     "contest_id": 895,
     "language": "GNU C++14",
