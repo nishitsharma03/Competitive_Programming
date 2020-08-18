@@ -3005,6 +3005,24 @@
     ],
     "timestamp": "May/09/2020 21:12"
   },
+  "CF90346385": {
+    "contest_id": 895,
+    "language": "GNU C++14",
+    "path": "codeforces\\895\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "XK Segments",
+    "problem_url": "https://codeforces.com/contest/895/problem/B",
+    "submission_id": "CF90346385",
+    "submission_url": "https://codeforces.com/contest/895/submission/90346385",
+    "tags": [
+      "binary search",
+      "math",
+      "sortings",
+      "two pointers",
+      "*1700"
+    ],
+    "timestamp": "Aug/19/2020 03:49"
+  },
   "CF90483752": {
     "contest_id": 1111,
     "language": "GNU C++14",
