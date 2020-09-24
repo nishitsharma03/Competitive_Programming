@@ -8,7 +8,7 @@
 #define pb push_back
 #define db double
 #define mp make_pair
-#define endl "\n"
+//#define endl "\n"
 #define f first
 #define se second
 #define all(x) x.begin(),x.end()
@@ -27,7 +27,7 @@ ll mod_inv(ll x) {return power(x, MOD - 2);}
 using namespace std;
 const int N=3e5+5;
 ll fac[N],inv[N];
-
+map<ll,vll> m;
 void precomp()
 {
 	fac[0]=1;
@@ -67,7 +67,7 @@ int main()
 	fab(0,n,i)
 	{
 		cin>>a[i].f>>a[i].se;
-		
+		m[a[i].se].pb(a[i].f);
 		v.pb({a[i].f,1});
 		v.pb({a[i].se,2});
 
@@ -78,15 +78,14 @@ int main()
 	{
 		//cout<<"v:"<<v[i].f<<" "<<v[i].se<<endl;
 		if(v[i].se==1)
-			{
-				cnt++;
+			{cnt++;
 			}
 		else
 			{ 
 				//cout<<"cnt:"<<cnt<<endl;
 				if(cnt==k)
 				ans=add(ncr(cnt,k),ans);
-				else if(cnt>k)
+			else if(cnt>k)
 				ans=add(ncr(cnt-1,k-1),ans);
 			
 				cnt--;
