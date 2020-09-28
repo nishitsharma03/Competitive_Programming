@@ -43,8 +43,12 @@ int main()
 		 ll last=1;
 		 while(sum<n)
 		 {
-		 	
-		 	if(cnt%2)
+		 	if(sum+last>=n)
+		 	{
+		 		sum+=last;
+		 	}
+
+		 	else if(cnt%2)
 		 	{
 		 		sum+=last;
 
