@@ -69,7 +69,7 @@ int main()
 			big=max(big,v[i]);
 			v[i]=big;
 		}
-		int ans=INT_MAX-1;
+		int ans=INT_MAX;
 		fab(0,N,i)
 		{
 			ans=min(ans,v[i]+i);
