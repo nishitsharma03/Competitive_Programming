@@ -1058,6 +1058,24 @@
     ],
     "timestamp": "Dec/24/2020 02:54"
   },
+  "CF94749903": {
+    "contest_id": 219,
+    "language": "GNU C++14",
+    "path": "codeforces\\219\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Choosing Capital for Treeland",
+    "problem_url": "https://codeforces.com/contest/219/problem/D",
+    "submission_id": "CF94749903",
+    "submission_url": "https://codeforces.com/contest/219/submission/94749903",
+    "tags": [
+      "dfs and similar",
+      "dp",
+      "graphs",
+      "trees",
+      "*1700"
+    ],
+    "timestamp": "Oct/05/2020 14:01"
+  },
   "CF94936542": {
     "contest_id": 983,
     "language": "GNU C++14",
