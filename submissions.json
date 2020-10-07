@@ -1,4 +1,20 @@
 {
+  "AC17242844": {
+    "contest_id": "abc179",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc179\\C.cpp",
+    "platform": "AtCoder",
+    "problem_index": "C",
+    "problem_name": "A x B + C",
+    "problem_url": "https://atcoder.jp/contests/abc179/tasks/abc179_c",
+    "submission_id": "AC17242844",
+    "submission_url": "https://atcoder.jp/contests/abc179/submissions/17242844",
+    "tags": [
+      "AtCoder",
+      "*300"
+    ],
+    "timestamp": "Oct/07/2020 20:36"
+  },
   "AC17243301": {
     "contest_id": "abc179",
     "language": "C++ (GCC 9.2.1)",
