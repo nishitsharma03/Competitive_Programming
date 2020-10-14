@@ -73,7 +73,7 @@ int main()
 		{
 			
 			//cout<<"a[i]:"<< a[i]<<" "<<j<<endl;
-			if(j<=i+1)
+			
 			dp[j]=add(dp[j],dp[j-1]);
 		}
 	}
