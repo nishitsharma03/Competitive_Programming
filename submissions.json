@@ -1,4 +1,20 @@
 {
+  "AC17975978": {
+    "contest_id": "abc182",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc182\\E.cpp",
+    "platform": "AtCoder",
+    "problem_index": "E",
+    "problem_name": "Akari",
+    "problem_url": "https://atcoder.jp/contests/abc182/tasks/abc182_e",
+    "submission_id": "AC17975978",
+    "submission_url": "https://atcoder.jp/contests/abc182/submissions/17975978",
+    "tags": [
+      "AtCoder",
+      "*500"
+    ],
+    "timestamp": "Nov/08/2020 18:13"
+  },
   "AC18014132": {
     "contest_id": "abc161",
     "language": "C++ (GCC 9.2.1)",
