@@ -1,4 +1,20 @@
 {
+  "AC18014671": {
+    "contest_id": "abc161",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\abc161\\D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "Lunlun Number",
+    "problem_url": "https://atcoder.jp/contests/abc161/tasks/abc161_d",
+    "submission_id": "AC18014671",
+    "submission_url": "https://atcoder.jp/contests/abc161/submissions/18014671",
+    "tags": [
+      "AtCoder",
+      "*400"
+    ],
+    "timestamp": "Nov/09/2020 17:29"
+  },
   "AC18117830": {
     "contest_id": "abc183",
     "language": "C++ (GCC 9.2.1)",
