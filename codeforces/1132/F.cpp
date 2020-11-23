@@ -65,10 +65,10 @@ int main()
 				dp[i][j]=min(dp[i+1][j]+(s[i]!=s[i+1]),dp[i][j-1]+(s[j]!=s[j-1]));
 				
 				//if(s[i]==s[j])
-				{for( int k=i;k<j;k++)
+				{for( int k=i+2;k<=j;k++)
 				{
-					if(s[j]==s[k])
-					dp[i][j]=min(dp[i][j],dp[i][k]+dp[k+1][j-1]);
+					if(s[i]==s[k])
+					dp[i][j]=min(dp[i][j],dp[i+1][k-1]+dp[k][j]);
 				}
 				}
 			}
