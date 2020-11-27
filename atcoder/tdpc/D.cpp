@@ -29,6 +29,9 @@ using namespace std;
 db dp[205][101][101];
 
 
+
+
+
 int main()
 { quick;
 #ifndef ONLINE_JUDGE
@@ -57,11 +60,12 @@ int main()
         temp/=5;
 
     }
-    if(temp>2 )
+    if(temp>2 or cnt2>n or cnt3>n or cnt5>n or max(cnt2,cnt3)+cnt5>n)
     {
         cout<<0<<endl;
         return 0;
     }
+    //cout<<"op:"<<cnt2<<" "<<cnt3<<" "<<cnt5<<endl;
 
     memset(dp,0.0,sizeof(dp));
 
@@ -75,23 +79,35 @@ int main()
             for( int k=0;k<=n;k++)
             {
                 for( int p=0;p<=n;p++)
-                {   
+                {   //
 
-                   db val=0.0;
-                    
+                    //dp[i][j][k][p]+=((dp[i-1][j][k][p])/6.0);
+                    //cout<<"check:"<<i<<" "<<j<<" "<<k<<" "<<p<<" "<<dp[i][j][k][p]<<endl;
+                    //                  get 2                       get 6                                               get 3                                 get 5                get 4               
+                    db val=0.0;
                     // get 1
                     val+=(dp[j][k][p]);
-                    
                     // get 2
+                    
                     if(j>0)
                     {
                         val+=dp[j-1][k][p];
 
                     }
+                    // get 6
+                    if(k>0 and j>0)
+                    {
+                        val+=dp[j-1][k-1][p];
+                    }
                     // get 3
                     if(k>0)
                     {
                         val+=dp[j][k-1][p];
+                    }
+                    // get 5
+                    if(p>0)
+                    {
+                        val+=dp[j][k][p-1];
                     }
                     // get 4
                     if(j>1)
@@ -99,23 +115,10 @@ int main()
                         val+=dp[j-2][k][p];
 
                     }
-
-                    // get 5
-                    if(p>0)
-                    {
-                        val+=dp[j][k][p-1];
-                    }
-
-                    // get 6
-                    if(k>0 and j>0)
-                    {
-                        val+=dp[j-1][k-1][p];
-                    }
-                    
-                    
-                    
                     new_dp[j][k][p]=(val/6.0);
-                   
+                    //dp[i][j][k][p]+=(((j==0)?0:dp[i-1][j-1][k][p]) + ((j==0 or k==0 )?0:dp[i-1][j-1][k-1][p]) + ((k==0)?0:dp[i-1][j][k-1][p]) + ((p==0)?0:dp[i-1][j][k][p-1])+((j<=1)?0:dp[i-1][j-2][k][p]))/6.0;
+                   // cout<<"get2"<<(j==0?0:dp[i-1][j-1][k][p])<<endl;
+                    //cout<<"i:"<<i<<" "<<j<<" "<<k<<" "<<p<<" "<<dp[i][j][k][p]<<endl;
                 }  
             }
 
