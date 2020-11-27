@@ -1058,6 +1058,24 @@
     ],
     "timestamp": "Dec/24/2020 02:54"
   },
+  "CF99747577": {
+    "contest_id": 1108,
+    "language": "GNU C++14",
+    "path": "codeforces\\1108\\F.cpp",
+    "problem_index": "F",
+    "problem_name": "MST Unification",
+    "problem_url": "https://codeforces.com/contest/1108/problem/F",
+    "submission_id": "CF99747577",
+    "submission_url": "https://codeforces.com/contest/1108/submission/99747577",
+    "tags": [
+      "binary search",
+      "dsu",
+      "graphs",
+      "greedy",
+      "*2100"
+    ],
+    "timestamp": "Nov/28/2020 01:44"
+  },
   "CF99994062": {
     "contest_id": 1455,
     "language": "GNU C++14",
