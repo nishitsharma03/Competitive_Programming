@@ -1,4 +1,20 @@
 {
+  "AC18437750": {
+    "contest_id": "tdpc",
+    "language": "C++ (GCC 9.2.1)",
+    "path": "atcoder\\tdpc\\D.cpp",
+    "platform": "AtCoder",
+    "problem_index": "D",
+    "problem_name": "\u30b5\u30a4\u30b3\u30ed",
+    "problem_url": "https://atcoder.jp/contests/tdpc/tasks/tdpc_dice",
+    "submission_id": "AC18437750",
+    "submission_url": "https://atcoder.jp/contests/tdpc/submissions/18437750",
+    "tags": [
+      "AtCoder",
+      "*4"
+    ],
+    "timestamp": "Nov/27/2020 20:26"
+  },
   "AC18662074": {
     "contest_id": "dp",
     "language": "C++ (GCC 9.2.1)",
