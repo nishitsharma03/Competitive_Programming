@@ -67,8 +67,6 @@ int main()
 
     dp[0][0][0]=1.0;
 
-    // dp[j][k][p]  denotes prob that the current product is of the form 2^j*3^k*5^p.
-
     for( int i=1;i<=n;i++)
     {
         db new_dp[205][101][101];
