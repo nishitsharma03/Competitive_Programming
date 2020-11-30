@@ -1057,5 +1057,21 @@
       "*1300"
     ],
     "timestamp": "Dec/24/2020 02:54"
+  },
+  "CF99994062": {
+    "contest_id": 1455,
+    "language": "GNU C++14",
+    "path": "codeforces\\1455\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Strange Functions",
+    "problem_url": "https://codeforces.com/contest/1455/problem/A",
+    "submission_id": "CF99994062",
+    "submission_url": "https://codeforces.com/contest/1455/submission/99994062",
+    "tags": [
+      "math",
+      "number theory",
+      "*800"
+    ],
+    "timestamp": "Nov/30/2020 20:07"
   }
 }
