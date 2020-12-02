@@ -1,4 +1,20 @@
 {
+  "CF100222824": {
+    "contest_id": 1107,
+    "language": "GNU C++14",
+    "path": "codeforces\\1107\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Digits Sequence Dividing",
+    "problem_url": "https://codeforces.com/contest/1107/problem/A",
+    "submission_id": "CF100222824",
+    "submission_url": "https://codeforces.com/contest/1107/submission/100222824",
+    "tags": [
+      "greedy",
+      "strings",
+      "*900"
+    ],
+    "timestamp": "Dec/03/2020 01:20"
+  },
   "CF100223219": {
     "contest_id": 1176,
     "language": "GNU C++14",
