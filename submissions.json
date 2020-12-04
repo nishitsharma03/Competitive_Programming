@@ -1,4 +1,19 @@
 {
+  "CF100406634": {
+    "contest_id": 586,
+    "language": "GNU C++14",
+    "path": "codeforces\\586\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Alena's Schedule",
+    "problem_url": "https://codeforces.com/contest/586/problem/A",
+    "submission_id": "CF100406634",
+    "submission_url": "https://codeforces.com/contest/586/submission/100406634",
+    "tags": [
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Dec/05/2020 03:56"
+  },
   "CF100406848": {
     "contest_id": 1195,
     "language": "GNU C++14",
