@@ -1,4 +1,21 @@
 {
+  "CF100406462": {
+    "contest_id": 1152,
+    "language": "GNU C++14",
+    "path": "codeforces\\1152\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Neko Finds Grapes",
+    "problem_url": "https://codeforces.com/contest/1152/problem/A",
+    "submission_id": "CF100406462",
+    "submission_url": "https://codeforces.com/contest/1152/submission/100406462",
+    "tags": [
+      "greedy",
+      "implementation",
+      "math",
+      "*800"
+    ],
+    "timestamp": "Dec/05/2020 03:48"
+  },
   "CF100406634": {
     "contest_id": 586,
     "language": "GNU C++14",
