@@ -1,4 +1,20 @@
 {
+  "CF100449843": {
+    "contest_id": 527,
+    "language": "GNU C++14",
+    "path": "codeforces\\527\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Playing with Paper",
+    "problem_url": "https://codeforces.com/contest/527/problem/A",
+    "submission_id": "CF100449843",
+    "submission_url": "https://codeforces.com/contest/527/submission/100449843",
+    "tags": [
+      "implementation",
+      "math",
+      "*1100"
+    ],
+    "timestamp": "Dec/05/2020 17:03"
+  },
   "CF100450151": {
     "contest_id": 637,
     "language": "GNU C++14",
