@@ -1,4 +1,22 @@
 {
+  "CF100479756": {
+    "contest_id": 1004,
+    "language": "GNU C++14",
+    "path": "codeforces\\1004\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Sonya and Exhibition",
+    "problem_url": "https://codeforces.com/contest/1004/problem/B",
+    "submission_id": "CF100479756",
+    "submission_url": "https://codeforces.com/contest/1004/submission/100479756",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "implementation",
+      "math",
+      "*1300"
+    ],
+    "timestamp": "Dec/06/2020 02:21"
+  },
   "CF100479931": {
     "contest_id": 544,
     "language": "GNU C++14",
