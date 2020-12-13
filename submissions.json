@@ -1,4 +1,19 @@
 {
+  "CF101118122": {
+    "contest_id": 176,
+    "language": "GNU C++14",
+    "path": "codeforces\\176\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Word Cut",
+    "problem_url": "https://codeforces.com/contest/176/problem/B",
+    "submission_id": "CF101118122",
+    "submission_url": "https://codeforces.com/contest/176/submission/101118122",
+    "tags": [
+      "dp",
+      "*1700"
+    ],
+    "timestamp": "Dec/13/2020 22:00"
+  },
   "CF101120231": {
     "contest_id": 219,
     "language": "GNU C++14",
