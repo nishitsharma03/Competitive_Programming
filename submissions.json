@@ -1,0 +1,18 @@
+{
+  "CF102153396": {
+    "contest_id": 66,
+    "language": "GNU C++14",
+    "path": "codeforces\\66\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Petya and Java",
+    "problem_url": "https://codeforces.com/contest/66/problem/A",
+    "submission_id": "CF102153396",
+    "submission_url": "https://codeforces.com/contest/66/submission/102153396",
+    "tags": [
+      "implementation",
+      "strings",
+      "*1300"
+    ],
+    "timestamp": "Dec/24/2020 02:54"
+  }
+}
