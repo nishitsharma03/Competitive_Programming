@@ -50,13 +50,18 @@ int main()
 		bool ok = 1;
 		fab(1, n - 1, i)
 		{
-
+			// if (a[i] > prev or prev - k > a[i] + k - 1 )
+			// {
+			// 	ok = 0;
+			// 	break;
+			// }
 			if (a[i + 1] > a[i])
 			{
 				pos[i] = (prev + k - 1 );
 				if (pos[i] > a[i] + k - 1 + k)
 				{
 					pos[i] = a[i] + k - 1 + k;
+					//pos[i] = max(a[i] + k, prev);
 				}
 				if (pos[i] - k < a[i])
 				{
@@ -71,23 +76,28 @@ int main()
 				if (pos[i] > a[i] + k - 1 + k)
 				{
 					pos[i] = a[i] + k - 1 + k;
+					//pos[i] = max(a[i] + k, prev);
 				}
 				if (pos[i] - k < a[i])
 				{
 					pos[i] = a[i] + k;
 				}
+				//pos[i] = max(a[i] + k, prev);
 			}
 			prev = pos[i];
 
 		}
 
 		pos[n - 1] = a[n - 1] + k;
-
+		// fab(0, n, i)
+		// {
+		// 	cout << pos[i] << " ";
+		// }
 		fab(0, n - 1, i)
 		{
 			if (abs(pos[i] - pos[i + 1]) >= k or pos[i] - k < a[i] or pos[i] - k > a[i] + k - 1)
 			{
-
+				//cout << "ok:" << i << endl;
 				ok = 0;
 			}
 		}

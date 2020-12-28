@@ -2067,6 +2067,23 @@
     ],
     "timestamp": "Dec/25/2020 00:57"
   },
+  "CF102596647": {
+    "contest_id": 1469,
+    "language": "GNU C++14",
+    "path": "codeforces\\1469\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Building a Fence",
+    "problem_url": "https://codeforces.com/contest/1469/problem/C",
+    "submission_id": "CF102596647",
+    "submission_url": "https://codeforces.com/contest/1469/submission/102596647",
+    "tags": [
+      "dp",
+      "greedy",
+      "implementation"
+    ],
+    "timestamp": "Dec/28/2020 21:09"
+  },
   "CF102618549": {
     "contest_id": 1469,
     "language": "GNU C++14",
