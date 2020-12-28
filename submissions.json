@@ -2067,6 +2067,23 @@
     ],
     "timestamp": "Dec/25/2020 00:57"
   },
+  "CF102618549": {
+    "contest_id": 1469,
+    "language": "GNU C++14",
+    "path": "codeforces\\1469\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Ceil Divisions",
+    "problem_url": "https://codeforces.com/contest/1469/problem/D",
+    "submission_id": "CF102618549",
+    "submission_url": "https://codeforces.com/contest/1469/submission/102618549",
+    "tags": [
+      "constructive algorithms",
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Dec/28/2020 21:57"
+  },
   "CF102637069": {
     "contest_id": 1469,
     "language": "GNU C++14",

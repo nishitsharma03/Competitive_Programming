@@ -38,7 +38,10 @@ int main()
 	{
 		int n;
 		cin >> n;
-
+		int a[n + 1];
+		fab(1, n + 1, i)
+		a[i] = i;
+		//cout << n + 1 << endl;
 		if (n <= 50)
 		{	vector<pii> v;
 			fab(1, n, i)
@@ -46,19 +49,33 @@ int main()
 				if (i == (n + 1) / 2)
 					continue;
 				v.pb({i, n});
+				a[i] = (a[i] + n - 1) / n;
 
+				//cout << i << " " << n << endl;
 			}
 			v.pb({n, (n + 1) / 2});
 
 
 			int x = (n + 1) / 2;
 			int y = x;
+			a[n] = (a[n] + x - 1) / x;
 			while (x > 1)
 			{
 				v.pb({(n + 1) / 2, n});
+				a[y] = (a[y] + a[n] - 1) / a[n];
+				//cout << "x:" << x << endl;
 				x = (x + 1) / 2;
 			}
+			int cnt1 = 0, cnt2 = 0;
+			fab(1, n + 1, i)
+			{
+				cnt1 += (a[i] == 1);
+				cnt2 += (a[i] == 2);
+			}
+			//cout << "cnt:" << cnt1 << " " << cnt2 << endl;
+			//assert(cnt1 == n - 1 and cnt2 == 1);
 
+			//cout << "n:" << n << endl;
 			cout << v.size() << endl;
 
 			for (auto i : v)
@@ -74,12 +91,15 @@ int main()
 					continue;
 
 				v.pb({i, n});
+				a[i] = (a[i] + n - 1) / n;
 
 			}
 			int x = n;
 			while (x > 1)
 			{
 				v.pb({n, 8});
+				a[8] = (a[8] + a[n] - 1) / a[n];
+				//cout << "x:" << x << endl;
 				x = (x + 7) / 8;
 			}
 			x = 8;
@@ -87,6 +107,7 @@ int main()
 			{
 				v.pb({8, 2});
 
+				//cout << "x:" << x << endl;
 				x = (x + 1) / 2;
 			}
 			assert(v.size() <= n + 5);
