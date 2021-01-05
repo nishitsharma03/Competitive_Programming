@@ -2246,6 +2246,22 @@
     ],
     "timestamp": "Dec/29/2020 00:25"
   },
+  "CF103392837": {
+    "contest_id": 1471,
+    "language": "GNU C++14",
+    "path": "codeforces\\1471\\A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Strange Partition",
+    "problem_url": "https://codeforces.com/contest/1471/problem/A",
+    "submission_id": "CF103392837",
+    "submission_url": "https://codeforces.com/contest/1471/submission/103392837",
+    "tags": [
+      "greedy",
+      "math"
+    ],
+    "timestamp": "Jan/05/2021 20:09"
+  },
   "CF103401249": {
     "contest_id": 1471,
     "language": "GNU C++14",
