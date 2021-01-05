@@ -2246,6 +2246,22 @@
     ],
     "timestamp": "Dec/29/2020 00:25"
   },
+  "CF103401249": {
+    "contest_id": 1471,
+    "language": "GNU C++14",
+    "path": "codeforces\\1471\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Strange List",
+    "problem_url": "https://codeforces.com/contest/1471/problem/B",
+    "submission_id": "CF103401249",
+    "submission_url": "https://codeforces.com/contest/1471/submission/103401249",
+    "tags": [
+      "implementation",
+      "math"
+    ],
+    "timestamp": "Jan/05/2021 20:17"
+  },
   "CF103412192": {
     "contest_id": 1471,
     "language": "GNU C++14",
