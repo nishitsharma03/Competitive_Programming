@@ -65,7 +65,7 @@ int maxPathValue(int n, int m, vector<vector<int>> &edges, string &values)
             for (int j = 0; j < 26; j++)
             {
                 dp[i][j] = max(dp[i][j], dp[curr][j]);
-                //ans = max(ans, dp[i][j]);
+                ans = max(ans, dp[i][j]);
             }
 
             inDegree[i]--;
