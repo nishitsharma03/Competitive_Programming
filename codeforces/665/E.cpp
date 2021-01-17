@@ -27,7 +27,7 @@ ll mod_inv(ll x) {return power(x, MOD - 2);}
 using namespace std;
 const int N = 1e6 + 6;
 ll a[N];
-ll n;
+ll n, k;
 
 struct trienode {
     trienode *child[2];
@@ -41,27 +41,21 @@ struct trienode {
     }
 };
 
-//   head node
 struct trienode *head;
-
 void insert( ll n)
 {
     auto temp = head;
 
     for ( int i = 31; i >= 0; i--)
     {
-        //   check if the current bit is set.
-        bool val = (n & (1LL << i));
+        bool val = (n & (1 << i));
 
-        //  create new node.
         if (!temp->child[val])
         {
             temp->child[val] = new trienode();
         }
 
         temp = temp->child[val];
-
-        //  Update the count.
         temp->cnt++;
 
     }
@@ -70,31 +64,22 @@ void insert( ll n)
 }
 
 
-//    Count number of subarrays with xor >=k
-ll search(ll n, ll k)
+ll search(ll n)
 {
     ll ans = 0;
     auto temp = head;
     for (int i = 31; i >= 0; i--)
     {
-        //  Check curr bit in K
-        bool val = (k & (1LL << i));
+        bool val = (k & (1 << i));
+        bool val2 = (n & (1 << i));
 
-        //  Check curr bit in N
-        bool val2 = (n & (1LL << i));
-
-        //    If the bit is unset in K, find the number of subarrays with
-        //    curr bit set.
         if (!val and temp->child[(val2 ^ 1)]) {
             ans += temp->child[(val2 ^ 1)]->cnt;
 
 
         }
-
-        //  Toggle.
         if (val)
             val2 ^= 1;
-
 
         if (!temp->child[val2])
         {
@@ -102,14 +87,11 @@ ll search(ll n, ll k)
             return ans;
         }
 
-        //    Move to child nodes.
         temp = temp->child[val2];
 
 
 
     }
-
-    //  To include values equal to k.
     ans += temp->cnt;
 
     return ans;
@@ -122,29 +104,24 @@ int main()
     freopen("D:/sublime/output.txt", "w", stdout);
 #endif
     head = new trienode();
-    ll k;
     cin >> n >> k;
-
 
     ll ans = 0;
     ll curr = 0;
-    //   intial xor is 0.
     insert(0);
     fab(0, n, i)
     {
         cin >> a[i];
-
-        //   curr xor.
         curr ^= a[i];
 
-        //    insert into trie.
         insert(curr);
+        ll val = search(curr);
 
-        //    Query the trie.
-        ll val = search(curr, k);
+
         ans += val;
-    }
 
+
+    }
     cout << ans << endl;
 
 
