@@ -2534,6 +2534,21 @@
     ],
     "timestamp": "Jan/18/2021 03:45"
   },
+  "CF104803591": {
+    "contest_id": 1474,
+    "language": "GNU C++14",
+    "path": "codeforces\\1474\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Array Destruction",
+    "problem_url": "https://codeforces.com/contest/1474/problem/C",
+    "submission_id": "CF104803591",
+    "submission_url": "https://codeforces.com/contest/1474/submission/104803591",
+    "tags": [
+      "constructive algorithms"
+    ],
+    "timestamp": "Jan/19/2021 20:51"
+  },
   "CF69955078": {
     "contest_id": 1293,
     "language": "GNU C++14",
