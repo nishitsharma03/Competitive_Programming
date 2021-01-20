@@ -2582,6 +2582,26 @@
     ],
     "timestamp": "Jan/19/2021 20:51"
   },
+  "CF104939565": {
+    "contest_id": 1474,
+    "language": "GNU C++14",
+    "path": "codeforces\\1474\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "Cleaning",
+    "problem_url": "https://codeforces.com/contest/1474/problem/D",
+    "submission_id": "CF104939565",
+    "submission_url": "https://codeforces.com/contest/1474/submission/104939565",
+    "tags": [
+      "brute force",
+      "data structures",
+      "dp",
+      "greedy",
+      "math",
+      "*2200"
+    ],
+    "timestamp": "Jan/21/2021 04:03"
+  },
   "CF104994027": {
     "contest_id": 1015,
     "language": "GNU C++14",
