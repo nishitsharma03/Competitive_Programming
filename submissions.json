@@ -2700,6 +2700,24 @@
     ],
     "timestamp": "Jan/21/2021 19:46"
   },
+  "CF105503966": {
+    "contest_id": 1475,
+    "language": "GNU C++14",
+    "path": "codeforces\\1475\\G.cpp",
+    "platform": "Codeforces",
+    "problem_index": "G",
+    "problem_name": "Strange Beauty",
+    "problem_url": "https://codeforces.com/contest/1475/problem/G",
+    "submission_id": "CF105503966",
+    "submission_url": "https://codeforces.com/contest/1475/submission/105503966",
+    "tags": [
+      "dp",
+      "graphs",
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Jan/26/2021 22:48"
+  },
   "CF69955078": {
     "contest_id": 1293,
     "language": "GNU C++14",
