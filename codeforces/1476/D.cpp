@@ -38,8 +38,6 @@ char toggle(char a)
 	return 'L';
 }
 
-//	  Maximum possible cities that can be visited to the right of ind.
-//	 Such that number of moves taken to reach ind modulo two is equal to parity
 ll rec(int ind, int par)
 {
 	if (ind == n)
@@ -53,6 +51,21 @@ ll rec(int ind, int par)
 		p = toggle(p);
 
 	}
+	// if (ind > 0)
+	// {
+	// 	char op = s[ind - 1];
+	// 	if (par == 1)
+	// 	{
+	// 		op = toggle(op);
+
+	// 	}
+	// 	if (op == 'L')
+	// 	{
+	// 		dp[ind][par] = 0;
+
+	// 	}
+
+	// }
 
 	if (p == 'L')
 	{
@@ -66,8 +79,7 @@ ll rec(int ind, int par)
 
 }
 
-//	 Maximum possible cities that can be visited to the left of ind.
-//	 Such that number of moves taken to reach ind modulo two is equal to parity
+
 ll go( int ind, int par)
 {
 	if (ind < 0)
@@ -90,8 +102,12 @@ ll go( int ind, int par)
 	if (p == 'L')
 	{
 		ll val = 1 + go(ind - 1, 1 ^ par);
+		//cout << "ind:" << ind << " " << par << " " << val << endl;
 		dp2[ind][par] = val;
-
+		// if (c == 'R')
+		// 	dp2[ind][par] = val;
+		// else
+		// 	dp2[ind][par] = val;
 
 	}
 	else
@@ -130,7 +146,10 @@ int main()
 			go(i, 0);
 		}
 
-
+		// fab(0, n + 1, i)
+		// {
+		// 	cout << dp[i][0] << " " << dp2[i][0] << endl;
+		// }
 
 		fab(0, n + 1, i)
 		{
