@@ -46,7 +46,7 @@ int main()
 
 		vector<int> suff(m + 1);
 		int j = m - 1;
-		for ( int i = n - 1; i >= 0; i--)
+		for ( int i = n - 1; i >= 0 and j >= 0; i--)
 		{
 			if (s[i] == t[j])
 			{
@@ -67,6 +67,10 @@ int main()
 		int ans = 0;
 		fab(0, n, i)
 		{
+			if (j == m)
+			{
+				break;
+			}
 			if (s[i] == t[j])
 			{
 				if (j + 1 < m)
