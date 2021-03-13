@@ -3230,6 +3230,24 @@
     ],
     "timestamp": "Feb/13/2021 00:05"
   },
+  "CF109852900": {
+    "contest_id": 1501,
+    "language": "GNU C++14",
+    "path": "codeforces\\1501\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Napoleon Cake",
+    "problem_url": "https://codeforces.com/contest/1501/problem/B",
+    "submission_id": "CF109852900",
+    "submission_url": "https://codeforces.com/contest/1501/submission/109852900",
+    "tags": [
+      "dp",
+      "implementation",
+      "sortings",
+      "*900"
+    ],
+    "timestamp": "Mar/13/2021 15:04"
+  },
   "CF109874364": {
     "contest_id": 1501,
     "language": "GNU C++14",
