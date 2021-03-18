@@ -3230,6 +3230,76 @@
     ],
     "timestamp": "Feb/13/2021 00:05"
   },
+  "CF110332817": {
+    "contest_id": 1499,
+    "language": "GNU C++14",
+    "path": "codeforces\\1499\\B.cpp",
+    "platform": "Codeforces",
+    "problem_index": "B",
+    "problem_name": "Binary Removals",
+    "problem_url": "https://codeforces.com/contest/1499/problem/B",
+    "submission_id": "CF110332817",
+    "submission_url": "https://codeforces.com/contest/1499/submission/110332817",
+    "tags": [
+      "brute force",
+      "dp",
+      "greedy",
+      "implementation"
+    ],
+    "timestamp": "Mar/18/2021 20:31"
+  },
+  "CF110352881": {
+    "contest_id": 1499,
+    "language": "GNU C++14",
+    "path": "codeforces\\1499\\C.cpp",
+    "platform": "Codeforces",
+    "problem_index": "C",
+    "problem_name": "Minimum Grid Path",
+    "problem_url": "https://codeforces.com/contest/1499/problem/C",
+    "submission_id": "CF110352881",
+    "submission_url": "https://codeforces.com/contest/1499/submission/110352881",
+    "tags": [
+      "brute force",
+      "data structures",
+      "greedy",
+      "math"
+    ],
+    "timestamp": "Mar/18/2021 21:00"
+  },
+  "CF110469560": {
+    "contest_id": 1499,
+    "language": "GNU C++14",
+    "path": "codeforces\\1499\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "The Number of Pairs",
+    "problem_url": "https://codeforces.com/contest/1499/problem/D",
+    "submission_id": "CF110469560",
+    "submission_url": "https://codeforces.com/contest/1499/submission/110469560",
+    "tags": [
+      "dp",
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Mar/19/2021 21:46"
+  },
+  "CF110470067": {
+    "contest_id": 1499,
+    "language": "GNU C++14",
+    "path": "codeforces\\1499\\D.cpp",
+    "platform": "Codeforces",
+    "problem_index": "D",
+    "problem_name": "The Number of Pairs",
+    "problem_url": "https://codeforces.com/contest/1499/problem/D",
+    "submission_id": "CF110470067",
+    "submission_url": "https://codeforces.com/contest/1499/submission/110470067",
+    "tags": [
+      "dp",
+      "math",
+      "number theory"
+    ],
+    "timestamp": "Mar/19/2021 21:52"
+  },
   "CF69955078": {
     "contest_id": 1293,
     "language": "GNU C++14",
